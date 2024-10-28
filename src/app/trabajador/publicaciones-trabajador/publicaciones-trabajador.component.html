@@ -1,0 +1,10 @@
+<!-- src/app/publicaciones-trabajador/publicaciones-trabajador.component.html -->
+<div>
+    <h2>Publicaciones del Trabajador</h2>
+    <ul>
+      <li *ngFor="let publicacion of publicaciones">
+        {{ publicacion.descripcion }} - {{ publicacion.fecha }}
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,10 @@
+<!-- src/app/comentarios-trabajador/comentarios-trabajador.component.html -->
+<div>
+    <h2>Comentarios del Trabajador</h2>
+    <ul>
+      <li *ngFor='let comentario of comentarios'>
+        <strong>{{ comentario.empleador }}</strong>: {{ comentario.texto }} - {{ comentario.calificacion }} estrellas
+      </li>
+    </ul>
+  </div>
+  

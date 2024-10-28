@@ -1,0 +1,15 @@
+.perfil-trabajador {
+    text-align: right; /* Alinea el texto a la derecha */
+    margin: 20px; /* Añade un margen alrededor del cuadro */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del cuadro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  }
+  
+  .perfil-trabajador h1,
+  .perfil-trabajador p,
+  .perfil-trabajador button {
+    display: block; /* Asegura que cada elemento ocupe una línea completa */
+  }

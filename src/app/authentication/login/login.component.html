@@ -1,0 +1,33 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-container">
+    <h1 class="form-title">LOGIN</h1>
+    <div class="input-group">
+        <label for="correo" class="label">Correo:</label>
+        <input type="email" id="correo" formControlName="correo" class="input">
+        <div *ngIf="loginForm.get('correo')?.invalid && loginForm.get('correo')?.touched" class="error-message">
+            Por favor, introduce un correo válido.
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="password" class="label">Contraseña:</label>
+        <input type="password" id="password" formControlName="password" class="input">
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error-message">
+            La contraseña debe tener al menos 6 caracteres.
+        </div>
+    </div>
+
+    <div class="options-container">
+        <div class="checkbox-container">
+            <input id="remember" aria-describedby="remember" type="checkbox" class="checkbox">
+            <label for="remember" class="checkbox-label">Recordarme</label>
+        </div>
+        <a routerLink="/recuperar" class="forgot-link">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid" class="btn">Iniciar sesión</button>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+    <div class="links">
+        ¿Eres nuevo?<a routerLink="/registro" class="signup-link"> Regístrate aquí</a>
+    </div>
+</form>

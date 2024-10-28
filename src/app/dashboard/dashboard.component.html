@@ -1,0 +1,21 @@
+<!-- src/app/dashboard/dashboard.component.html -->
+<div class="dashboard">
+  <!-- Barra lateral -->
+   
+  <nav class="sidebar">
+    
+    <img src='/mujer.png' alt="mujer" class="nav-icon">
+  
+    <ul>
+      <li><a routerLink="/dashboard/perfil-trabajador">Perfil</a></li>
+      <li><a routerLink="/dashboard/publicaciones-trabajador">Publicaciones</a></li>
+      <li><a routerLink="/dashboard/comentarios-trabajador">Comentarios</a></li>
+      <li><button (click)="logout()">Cerrar Sesión</button></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <router-outlet></router-outlet> <!-- Aquí se cargan los componentes -->
+  </div>
+</div>

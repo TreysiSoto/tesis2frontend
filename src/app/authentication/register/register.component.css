@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;     /* Centra horizontalmente */
+  height: 80vh;       /* Ocupa al menos el 100% de la altura de la pantalla */
+  background-color: #73d9e4; /* Color de fondo */
+  padding: 2rem;           /* Padding general */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 70vh; /* Ancho máximo del formulario */
+  margin: 50px auto; /* Espacio superior e inferior de 50px, centrado horizontalmente */
+  
+}
+
+.form-title {
+  font-size: 2rem;
+  margin-bottom: 1rem; /* Reduce el espacio entre el título y el formulario */
+  text-align: center;
+  color: #333;
+}
+
+div {
+  width: 100%;
+  margin-bottom: 0.5rem; /* Reduce el espacio entre los campos de entrada */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem; /* Reduce el espacio entre la etiqueta y el campo */
+  color: #333;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 0.5rem; /* Mantén el padding para un buen aspecto del input */
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem; /* Reduce el espacio entre el mensaje de error y el input */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem; /* Mantén el padding para un buen aspecto del botón */
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-top: 1rem; /* Reduce el espacio superior del botón */
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #2dc0d7; /* Color para botón deshabilitado */
+}

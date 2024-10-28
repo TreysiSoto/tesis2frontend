@@ -1,0 +1,32 @@
+<form [formGroup]="registerForm" (ngSubmit)="onRegister()" class="form-container">
+  <h1 class="form-title">Registro de nuevo Usuario</h1>
+  <div>
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" formControlName="correo">
+    <div *ngIf="registerForm.get('correo')?.invalid && registerForm.get('correo')?.touched" class="error-message">Por favor, introduce un correo válido.</div>
+  </div>
+
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" formControlName="nombre">
+    <div *ngIf="registerForm.get('nombre')?.invalid && registerForm.get('nombre')?.touched" class="error-message">El nombre es requerido.</div>
+  </div>
+
+  <div>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" formControlName="password">
+    <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="error-message">La contraseña debe tener al menos 6 caracteres.</div>
+  </div>
+
+  <div>
+    <label for="rol">Rol:</label>
+    <select id="rol" formControlName="rol">
+      <option value="trabajador">Trabajador</option>
+      <option value="empleador">Empleador</option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="registerForm.invalid">Registrarse</button>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</form>

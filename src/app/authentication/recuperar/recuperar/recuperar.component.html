@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Olvidé mi Contraseña</h2>
+
+  <form [formGroup]="correoForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="correo">Correo Electrónico:</label>
+      <input 
+        id="correo" 
+        type="email" 
+        formControlName="correo" 
+        class="form-control" 
+        placeholder="Ingresa tu correo electrónico"
+      />
+      <div *ngIf="correoForm.get('correo')?.invalid && (correoForm.get('correo')?.touched || correoForm.get('correo')?.dirty)">
+        <small class="text-danger" *ngIf="correoForm.get('correo')?.errors?.['required']">El correo es requerido.</small>
+        <small class="text-danger" *ngIf="correoForm.get('correo')?.errors?.['email']">Ingresa un correo electrónico válido.</small>
+      </div>
+    </div>
+
+    <div *ngIf="message" class="alert alert-success">
+      {{ message }}
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+
+    <button type="submit" [disabled]="correoForm.invalid" class="btn btn-primary">Enviar Enlace de Restablecimiento</button>
+  </form>
+</div>

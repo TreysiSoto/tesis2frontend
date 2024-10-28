@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+   
+}
+
+
+.fondo {
+  background-image: url('/fondo.png');
+  background-size: cover; /* Cubre todo el área del div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  height: 55vh; /* Altura completa del viewport */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en una columna */
+  min-height: 100vh; /* Asegura que la altura mínima sea 100% del viewport */
+}
+
+header {
+  background-color: #2b9fc9; /* Color del encabezado */
+  padding: 10px;
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif; /* Asegúrate de incluir la fuente en tu proyecto */
+  font-size: 36px; /* Tamaño del título */
+  color: #e7e0de;
+}
+
+nav ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+nav li {
+  display: inline; /* Muestra los elementos de la lista en línea */
+  margin-right: 15px; /* Espacio entre los elementos */
+}
+
+.nav-icon {
+  max-width: 30px; /* Ajusta el tamaño del icono */
+  vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center; /* Alinea verticalmente el contenedor de búsqueda */
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px; /* Ajusta según prefieras */
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container-posts {
+    margin: 10px 400px; /* 0px arriba y abajo, 20px a la izquierda y derecha */
+    padding: 10px; /* Opcional: relleno interno */
+    border: 1px solid #ddd; /* Opcional: borde */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    background-color: #ffffff; /* Opcional: color de fondo */
+}
+
+.container-posts h2 {
+  text-align: center;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ffffff;
+}
+/* Estilos para el pie de página */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cuenta {
+  background-color: #dce0e1; /* Color de fondo */
+  padding: 10px 15px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Permite el uso de padding y margin */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px; /* Bordes redondeados */
+  color: black;
+}
+
+.cuenta:hover {
+  background-color: #3b1158; /* Color de fondo al pasar el mouse */
+  color: #f2edef;
+}

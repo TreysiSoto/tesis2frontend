@@ -1,0 +1,104 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    height: 80vh;       /* Ocupa al menos el 100% de la altura de la pantalla */
+    background-color: #71d8ede7; /* Color de fondo */
+    padding: 2rem;           /* Padding general */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 70vh; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Espacio superior e inferior de 50px, centrado horizontalmente */
+    
+}
+.form-title {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Reduce el espacio entre el título y el formulario */
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 0.5rem; /* Reduce el espacio entre los campos de entrada */
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.25rem; /* Reduce el espacio entre la etiqueta y el campo */
+    color: #090909;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem; /* Mantén el padding para un buen aspecto del input */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem; /* Reduce el espacio entre el mensaje de error y el input */
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    margin-bottom: 1rem; /* Ajuste de espacio inferior para que esté más pegado al botón */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label {
+    margin-left: 5px; /* Espacio entre el checkbox y el texto */
+    color: #090909;
+}
+
+.forgot-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #007bff;
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    padding: 0.75rem; /* Mantén el padding para un buen aspecto del botón */
+    border: none;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin-top: 1rem; /* Reduce el espacio superior del botón */
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:disabled {
+    background-color: #2dc0d7;
+}
+
+.links {
+    margin-top: 1rem; /* Reduce el espacio entre el botón y los enlaces */
+    text-align: center;
+}
+
+.signup-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}

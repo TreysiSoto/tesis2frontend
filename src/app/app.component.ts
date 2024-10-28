@@ -6,15 +6,16 @@ import { RouterOutlet, Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'], 
   standalone: true,
-  imports: [RouterOutlet], // Importa RouterOutlet para la navegación
+  imports: [RouterOutlet], 
 })
 export class AppComponent {
-  title = 'Tu Título Aquí'; // Define el título de la aplicación
+  title = 'fronAngular'; 
+  
 
-  constructor(private router: Router) {} // Inyección del servicio Router
+  constructor(private router: Router) {} 
 
   isLoginPage(): boolean {
-    return this.router.url === '/login'; // Verifica si la URL actual es la de login
+    return this.router.url === 'login'; 
   }
 }
 
